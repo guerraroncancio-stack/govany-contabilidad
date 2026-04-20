@@ -1,6 +1,6 @@
-// Script principal del sitio público.
-// Controla navegación móvil, animaciones por scroll, carrusel de testimonios,
-// efecto visual ligero en tarjetas y validación del formulario.
+// Script principal de la landing page.
+// Maneja navegación móvil, animaciones por scroll, testimonios, efecto visual en tarjetas
+// y validación del formulario orientado a captación.
 document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-  const revealItems = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .zoom-in');
+  const revealItems = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-up, .zoom-in');
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const rect = card.getBoundingClientRect();
       const x = event.clientX - rect.left;
       const y = event.clientY - rect.top;
-      const rotateY = ((x / rect.width) - 0.5) * 8;
-      const rotateX = ((y / rect.height) - 0.5) * -8;
+      const rotateY = ((x / rect.width) - 0.5) * 7;
+      const rotateX = ((y / rect.height) - 0.5) * -7;
       card.style.transform = `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     });
     card.addEventListener('mouseleave', () => {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formStatus.style.color = '#d93f3f';
         return;
       }
-      const storedMessages = JSON.parse(localStorage.getItem('contapro_messages') || '[]');
+      const storedMessages = JSON.parse(localStorage.getItem('govany_messages') || '[]');
       storedMessages.unshift({
         id: Date.now(),
         name: name.value.trim(),
@@ -69,13 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
         message: message.value.trim(),
         createdAt: new Date().toLocaleString('es-CO')
       });
-      localStorage.setItem('contapro_messages', JSON.stringify(storedMessages));
+      localStorage.setItem('govany_messages', JSON.stringify(storedMessages));
       contactForm.reset();
       clearFieldState(name);
       clearFieldState(email);
       clearFieldState(message);
-      formStatus.textContent = 'Mensaje enviado correctamente. Te contactaremos pronto.';
-      formStatus.style.color = '#1f8f6a';
+      formStatus.textContent = 'Solicitud enviada correctamente. Te responderemos en menos de 24h.';
+      formStatus.style.color = '#18a76a';
     });
   }
 });
@@ -107,16 +107,13 @@ function setupTestimonials() {
     currentIndex = index;
   }
   prevButton.addEventListener('click', () => {
-    const newIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(newIndex);
+    showSlide((currentIndex - 1 + slides.length) % slides.length);
   });
   nextButton.addEventListener('click', () => {
-    const newIndex = (currentIndex + 1) % slides.length;
-    showSlide(newIndex);
+    showSlide((currentIndex + 1) % slides.length);
   });
   setInterval(() => {
-    const newIndex = (currentIndex + 1) % slides.length;
-    showSlide(newIndex);
+    showSlide((currentIndex + 1) % slides.length);
   }, 5000);
 }
 function validateRequired(field, errorText) {
