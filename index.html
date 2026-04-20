@@ -3,377 +3,508 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Govany Contabilidad | Landing de alto impacto para asesoría contable</title>
-  <meta name="description" content="Landing page profesional de alto impacto para servicios de contabilidad. Habla por WhatsApp, solicita asesoría gratuita y deja tu contabilidad en manos expertas." />
-  <meta name="keywords" content="contabilidad, asesoría contable, impuestos, auditoría, nómina, landing page contable, Govany" />
-  <meta name="author" content="Govany y guerraroncancio@gmail.com" />
+  <title>OSSGIO SOLUTIONS S.A.S. | Soluciones Contables Modernas</title>
+  <meta
+    name="description"
+    content="Landing page premium de OSSGIO SOLUTIONS S.A.S. Soluciones contables modernas para empresas que quieren crecer. Agenda asesoría gratuita y habla por WhatsApp."
+  />
+  <meta
+    name="keywords"
+    content="OSSGIO SOLUTIONS, contabilidad, outsourcing contable, revisoría fiscal, auditoría, NIIF, SG-SST, due diligence, Colombia"
+  />
+  <meta name="author" content="OSSGIO SOLUTIONS S.A.S. | guerraroncancio@gmail.com" />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Govany Contabilidad | Asesoría contable de alto impacto" />
-  <meta property="og:description" content="Te ayudamos a cumplir con tus obligaciones fiscales sin estrés, errores ni multas." />
+  <meta property="og:title" content="OSSGIO SOLUTIONS S.A.S. | Soluciones Contables Modernas" />
+  <meta
+    property="og:description"
+    content="Firma StartUp de contadores públicos y revisores fiscales comprometida con la excelencia e innovación."
+  />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_CO" />
+  <meta property="og:image" content="https://api.dix.lat/media/img_1776703233520_4z4_X_v2p.jpg" />
+  <link rel="icon" type="image/jpeg" href="https://api.dix.lat/media/img_1776703256298_JmdTuFfoA.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#0a0a0a',
+            darksoft: '#111111',
+            panel: '#13161c',
+            electric: '#2563eb',
+            electricSoft: '#60a5fa',
+            line: 'rgba(255,255,255,0.08)'
+          },
+          boxShadow: {
+            glow: '0 0 0 1px rgba(37,99,235,.25), 0 20px 50px rgba(37,99,235,.12)',
+            panel: '0 20px 60px rgba(0,0,0,.45)'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.16), transparent 25%),
+        radial-gradient(circle at bottom right, rgba(96,165,250,.12), transparent 22%),
+        #0a0a0a;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .hero-grid-bg {
+      background:
+        linear-gradient(135deg, rgba(37,99,235,.16), rgba(255,255,255,.02)),
+        rgba(255,255,255,.02);
+    }
+    .text-gradient {
+      background: linear-gradient(90deg, #ffffff, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-hover {
+      transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 60px rgba(37, 99, 235, .18);
+      border-color: rgba(96,165,250,.35);
+    }
+    .social-icon:hover {
+      transform: translateY(-3px);
+    }
+  </style>
 </head>
-<body>
-  <div class="page-blur blur-one"></div>
-  <div class="page-blur blur-two"></div>
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <a href="#inicio" class="brand" aria-label="Ir al inicio de Govany Contabilidad">
-        <span class="brand-mark">GV</span>
-        <span class="brand-text">Govany Contabilidad</span>
+<body class="text-white">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#inicio" class="flex items-center gap-3">
+        <img
+          src="https://api.dix.lat/media/img_1776703233520_4z4_X_v2p.jpg"
+          alt="Logo OSSGIO SOLUTIONS S.A.S."
+          class="h-12 w-auto rounded-xl object-contain shadow-lg"
+        />
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">OSSGIO SOLUTIONS</p>
+          <p class="text-xs text-white/70">Contabilidad • Auditoría • Innovación</p>
+        </div>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="main-nav" id="mainNav">
-        <a href="#beneficios">Beneficios</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#testimonios">Resultados</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
-        <a href="https://wa.me/573115490586?text=Hola%20Govany%2C%20quiero%20asesor%C3%ADa%20contable" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">Hablar por WhatsApp</a>
+      <nav class="hidden items-center gap-8 lg:flex">
+        <a href="#nosotros" class="text-sm font-medium text-white/80 transition hover:text-white">Nosotros</a>
+        <a href="#valores" class="text-sm font-medium text-white/80 transition hover:text-white">Valores</a>
+        <a href="#servicios" class="text-sm font-medium text-white/80 transition hover:text-white">Servicios</a>
+        <a href="#valor" class="text-sm font-medium text-white/80 transition hover:text-white">Valor agregado</a>
+        <a href="#contacto" class="text-sm font-medium text-white/80 transition hover:text-white">Contacto</a>
+        <a
+          href="https://wa.me/573123437850?text=Hola%20OSSGIO%20SOLUTIONS%2C%20quiero%20agendar%20una%20asesor%C3%ADa"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-full bg-blue-600 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-500"
+        >
+          Agendar Asesoría
+        </a>
       </nav>
     </div>
   </header>
   <main>
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal reveal-left">
-          <span class="eyebrow">Asesoría contable moderna para personas y empresas</span>
-          <h1>Deja tu contabilidad en manos expertas y enfócate en hacer crecer tu negocio</h1>
-          <p class="hero-text">
-            Te ayudamos a cumplir con tus obligaciones fiscales sin estrés, errores ni multas,
-            con atención cercana, respuestas rápidas y una estrategia contable clara desde el primer contacto.
-          </p>
-          <div class="hero-cta-group">
-            <a href="https://wa.me/573115490586?text=Hola%20Govany%2C%20quiero%20hablar%20sobre%20asesor%C3%ADa%20contable" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Hablar por WhatsApp</a>
-            <a href="#contacto" class="btn btn-secondary btn-large">Solicitar asesoría gratuita</a>
+    <!-- Hero -->
+    <section id="inicio" class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-transparent"></div>
+      <div class="mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div data-aos="fade-right">
+          <div class="mb-6 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-blue-200">
+            <img
+              src="https://api.dix.lat/media/img_1776703256298_JmdTuFfoA.jpg"
+              alt="Ícono OSSGIO SOLUTIONS"
+              class="h-8 w-8 rounded-full object-cover"
+            />
+            Firma StartUp de contadores públicos y revisores fiscales
           </div>
-          <ul class="trust-list">
-            <li>✔ Atención rápida</li>
-            <li>✔ Asesoría personalizada</li>
-            <li>✔ Experiencia comprobada</li>
-          </ul>
+          <h1 class="max-w-3xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
+            <span class="text-gradient">Soluciones Contables Modernas</span><br />
+            para Empresas que quieren Crecer
+          </h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-white/75 sm:text-xl">
+            Firma StartUp de contadores públicos y revisores fiscales comprometida con la
+            <strong class="text-white">excelencia</strong> e
+            <strong class="text-white">innovación</strong>.
+          </p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#contacto"
+              class="inline-flex items-center justify-center rounded-full bg-blue-600 px-7 py-4 text-base font-extrabold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-500"
+            >
+              Agendar Asesoría Gratuita
+            </a>
+            <a
+              href="https://wa.me/573123437850?text=Hola%20OSSGIO%20SOLUTIONS%2C%20quiero%20hablar%20por%20WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 text-base font-bold text-white transition hover:bg-white/10"
+            >
+              Hablar por WhatsApp
+            </a>
+          </div>
+          <div class="mt-8 grid gap-3 sm:grid-cols-3">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-sm font-semibold text-white">✔ Atención rápida</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-sm font-semibold text-white">✔ Asesoría personalizada</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-sm font-semibold text-white">✔ Experiencia comprobada</p>
+            </div>
+          </div>
         </div>
-        <div class="hero-panel reveal reveal-right">
-          <div class="hero-card hero-main-card">
-            <span class="hero-badge">Respuesta en menos de 24h</span>
-            <h2>Ordena tus impuestos, tu contabilidad y tu operación financiera con un solo aliado</h2>
-            <p>
-              Una landing diseñada para convertir visitas en conversaciones reales, con foco en acción inmediata.
+        <div data-aos="fade-left" class="relative">
+          <div class="hero-grid-bg rounded-[2rem] border border-white/10 p-6 shadow-panel">
+            <img
+              src="https://api.dix.lat/media/img_1776703233520_4z4_X_v2p.jpg"
+              alt="Logo principal OSSGIO SOLUTIONS S.A.S."
+              class="mx-auto w-full max-w-md rounded-3xl object-contain"
+            />
+            <div class="mt-6 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-2xl border border-white/10 bg-black/30 p-4 text-center">
+                <p class="text-2xl font-black text-blue-300">360°</p>
+                <p class="mt-1 text-sm text-white/70">Soporte integral</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-black/30 p-4 text-center">
+                <p class="text-2xl font-black text-blue-300">NIIF</p>
+                <p class="mt-1 text-sm text-white/70">Normas internacionales</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-black/30 p-4 text-center">
+                <p class="text-2xl font-black text-blue-300">24h</p>
+                <p class="mt-1 text-sm text-white/70">Respuesta ágil</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -bottom-5 -left-3 rounded-2xl border border-blue-400/20 bg-blue-500/10 px-5 py-4 shadow-glow">
+            <p class="text-sm font-bold text-blue-200">Innovación + confianza + estrategia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="border-t border-white/10 py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2">
+          <div data-aos="fade-up">
+            <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-blue-300">Sobre nosotros</p>
+            <h2 class="text-3xl font-black sm:text-4xl">Una StartUp contable altamente calificada</h2>
+            <p class="mt-5 text-lg leading-8 text-white/75">
+              OSSGIO SOLUTIONS S.A.S. es una firma moderna que combina visión estratégica,
+              tecnología, atención personalizada y criterio técnico para acompañar a empresas
+              que necesitan crecer con orden, cumplimiento y confianza.
             </p>
-            <div class="hero-mini-stats">
-              <article>
-                <strong>+120</strong>
-                <span>clientes atendidos</span>
-              </article>
-              <article>
-                <strong>+8</strong>
-                <span>años de experiencia</span>
-              </article>
-              <article>
-                <strong>100%</strong>
-                <span>acompañamiento cercano</span>
-              </article>
-            </div>
+            <p class="mt-4 text-base leading-7 text-white/70">
+              Trabajamos con una mentalidad innovadora para entregar soluciones ágiles, eficientes
+              y alineadas con las necesidades reales del entorno empresarial colombiano.
+            </p>
           </div>
-          <div class="hero-floating-card">
-            <p>“Ahora tengo todo al día y sin preocupaciones.”</p>
-            <span>Cliente asesorado por Govany</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section benefits-section" id="beneficios">
-      <div class="container">
-        <div class="section-heading center reveal zoom-in">
-          <span class="eyebrow">Beneficios claros</span>
-          <h2>Más orden, menos riesgo y mejor control para tu negocio</h2>
-          <p>Una propuesta enfocada en resultados que el cliente entiende rápido y valora de inmediato.</p>
-        </div>
-        <div class="benefits-grid">
-          <article class="benefit-card reveal reveal-up">
-            <div class="benefit-icon">⏱</div>
-            <h3>Ahorro de tiempo</h3>
-            <p>Delegas procesos contables complejos y recuperas tiempo para enfocarte en vender, operar y crecer.</p>
-          </article>
-          <article class="benefit-card reveal reveal-up">
-            <div class="benefit-icon">🛡</div>
-            <h3>Evita sanciones</h3>
-            <p>Reduce errores y cumple a tiempo con tus obligaciones fiscales para evitar multas y dolores de cabeza.</p>
-          </article>
-          <article class="benefit-card reveal reveal-up">
-            <div class="benefit-icon">📊</div>
-            <h3>Organización financiera</h3>
-            <p>Tus números dejan de ser un caos y se convierten en información útil para tomar decisiones mejores.</p>
-          </article>
-          <article class="benefit-card reveal reveal-up">
-            <div class="benefit-icon">🤝</div>
-            <h3>Soporte constante</h3>
-            <p>No estás solo. Recibes orientación directa y acompañamiento continuo según tu necesidad real.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="cta-band reveal">
-      <div class="container cta-band-content">
-        <div>
-          <h2>Agenda tu asesoría ahora y empieza hoy mismo</h2>
-          <p>Una conversación puede ahorrarte errores, tiempo y dinero.</p>
-        </div>
-        <div class="cta-band-actions">
-          <a href="#contacto" class="btn btn-light">Agenda tu asesoría ahora</a>
-          <a href="https://wa.me/573115490586?text=Hola%2C%20quiero%20empezar%20hoy%20mismo" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">Escríbenos por WhatsApp</a>
-        </div>
-      </div>
-    </section>
-    <section class="section" id="servicios">
-      <div class="container">
-        <div class="section-heading reveal zoom-in">
-          <span class="eyebrow">Servicios</span>
-          <h2>Servicios contables diseñados para convertir problemas en tranquilidad</h2>
-          <p>Cada servicio comunica valor rápido, beneficio directo y una acción clara para el usuario.</p>
-        </div>
-        <div class="services-grid">
-          <article class="service-card tilt-card reveal reveal-up">
-            <div class="service-top">
-              <span class="service-number">01</span>
-              <h3>Contabilidad general</h3>
-            </div>
-            <p>Mantén tu información contable ordenada, actualizada y lista para tomar decisiones con confianza.</p>
-            <strong>Beneficio directo:</strong>
-            <p class="service-benefit">Más control sobre tus finanzas y menos improvisación.</p>
-            <a href="#contacto" class="service-link">Solicitar este servicio</a>
-          </article>
-          <article class="service-card tilt-card reveal reveal-up">
-            <div class="service-top">
-              <span class="service-number">02</span>
-              <h3>Declaración de impuestos</h3>
-            </div>
-            <p>Preparamos y presentamos tus obligaciones tributarias con criterio técnico y enfoque preventivo.</p>
-            <strong>Beneficio directo:</strong>
-            <p class="service-benefit">Menos riesgo de errores, sanciones y pagos mal calculados.</p>
-            <a href="#contacto" class="service-link">Solicitar este servicio</a>
-          </article>
-          <article class="service-card tilt-card reveal reveal-up">
-            <div class="service-top">
-              <span class="service-number">03</span>
-              <h3>Asesoría financiera</h3>
-            </div>
-            <p>Entiende mejor tus números y define decisiones con una visión más rentable y sostenible.</p>
-            <strong>Beneficio directo:</strong>
-            <p class="service-benefit">Mayor claridad para crecer sin desorden financiero.</p>
-            <a href="#contacto" class="service-link">Solicitar este servicio</a>
-          </article>
-          <article class="service-card tilt-card reveal reveal-up">
-            <div class="service-top">
-              <span class="service-number">04</span>
-              <h3>Auditorías</h3>
-            </div>
-            <p>Revisamos procesos, soportes y registros para fortalecer transparencia y control interno.</p>
-            <strong>Beneficio directo:</strong>
-            <p class="service-benefit">Detecta fallas antes de que se conviertan en un problema mayor.</p>
-            <a href="#contacto" class="service-link">Solicitar este servicio</a>
-          </article>
-          <article class="service-card tilt-card reveal reveal-up featured-service">
-            <div class="service-top">
-              <span class="service-number">05</span>
-              <h3>Gestión de nómina</h3>
-            </div>
-            <p>Administra pagos, novedades y aportes laborales con orden, puntualidad y exactitud.</p>
-            <strong>Beneficio directo:</strong>
-            <p class="service-benefit">Evita errores en pagos y mejora tu cumplimiento laboral.</p>
-            <a href="#contacto" class="service-link">Solicitar este servicio</a>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="section alt-section" id="testimonios">
-      <div class="container">
-        <div class="section-heading center reveal zoom-in">
-          <span class="eyebrow">Confianza real</span>
-          <h2>Historias que muestran resultados y tranquilidad</h2>
-          <p>La prueba social está pensada para eliminar dudas y reforzar autoridad.</p>
-        </div>
-        <div class="stats-bar reveal">
-          <article>
-            <strong>+120</strong>
-            <span>clientes atendidos</span>
-          </article>
-          <article>
-            <strong>+8</strong>
-            <span>años de experiencia</span>
-          </article>
-          <article>
-            <strong>+95%</strong>
-            <span>clientes recurrentes</span>
-          </article>
-        </div>
-        <div class="testimonial-slider reveal" id="testimonialSlider">
-          <article class="testimonial-slide active">
-            <p>“Antes todo era improvisado. Ahora tengo mis impuestos al día, la información ordenada y mucha más tranquilidad para concentrarme en mi negocio.”</p>
-            <div class="testimonial-author">
-              <strong>María Fernanda</strong>
-              <span>Dueña de tienda y cliente asesorada</span>
-            </div>
-          </article>
-          <article class="testimonial-slide">
-            <p>“Lo que más valoro es que explican todo claro. Dejé de sentir la contabilidad como una carga y empecé a verla como una herramienta.”</p>
-            <div class="testimonial-author">
-              <strong>Carlos Andrés</strong>
-              <span>Emprendedor independiente</span>
-            </div>
-          </article>
-          <article class="testimonial-slide">
-            <p>“Ahora tengo todo al día y sin preocupaciones. La respuesta es rápida, el servicio es serio y se nota el compromiso.”</p>
-            <div class="testimonial-author">
-              <strong>Andrea Rojas</strong>
-              <span>Administradora de empresa de servicios</span>
-            </div>
-          </article>
-          <div class="slider-controls">
-            <button type="button" class="slider-btn" id="prevTestimonial" aria-label="Anterior">‹</button>
-            <div class="slider-dots" id="sliderDots"></div>
-            <button type="button" class="slider-btn" id="nextTestimonial" aria-label="Siguiente">›</button>
+          <div class="grid gap-5">
+            <article data-aos="fade-up" data-aos-delay="100" class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-panel">
+              <h3 class="text-xl font-extrabold text-white">Misión</h3>
+              <p class="mt-3 leading-7 text-white/75">
+                Brindar servicios contables, fiscales y de auditoría con un enfoque humano,
+                innovador y estratégico, aportando tranquilidad, claridad y valor real a cada cliente.
+              </p>
+            </article>
+            <article data-aos="fade-up" data-aos-delay="200" class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-panel">
+              <h3 class="text-xl font-extrabold text-white">Visión</h3>
+              <p class="mt-3 leading-7 text-white/75">
+                Ser la firma líder en Colombia y estar posicionados nacionalmente para el 2027,
+                destacándonos por la excelencia, la eficiencia y la innovación en cada servicio.
+              </p>
+            </article>
           </div>
         </div>
       </div>
     </section>
-    <section class="section" id="nosotros">
-      <div class="container authority-grid">
-        <div class="authority-copy reveal reveal-left">
-          <span class="eyebrow">Nosotros</span>
-          <h2>Una propuesta moderna, confiable y construida para generar resultados</h2>
-          <p>
-            <strong>Govany</strong> lidera el servicio contable con un enfoque claro, humano y profesional.
-            Además, trabaja en conjunto con el creador y desarrollador del sitio,
-            <strong>guerraroncancio@gmail.com</strong>, para ofrecer una experiencia moderna, confiable y alineada con lo que hoy espera un cliente digital.
-          </p>
-          <p>
-            Esta combinación entre experiencia operativa y presentación digital profesional fortalece la confianza,
-            mejora la percepción de valor y facilita que el cliente tome acción más rápido.
-          </p>
+    <!-- Valores -->
+    <section id="valores" class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
+          <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-blue-300">Valores</p>
+          <h2 class="text-3xl font-black sm:text-4xl">Principios que sostienen cada decisión</h2>
         </div>
-        <div class="authority-cards reveal reveal-right">
-          <article class="authority-card glass-card">
-            <h3>Información clave</h3>
-            <ul>
-              <li><strong>Propietario:</strong> Govany</li>
-              <li><strong>Teléfono:</strong> 312 3437850</li>
-              <li><strong>Desarrollador:</strong> guerraroncancio@gmail.com</li>
+        <div class="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article data-aos="zoom-in" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-6 shadow-panel">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/20">
+              <img src="https://api.dix.lat/media/img_1776703256298_JmdTuFfoA.jpg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
+            </div>
+            <h3 class="text-xl font-extrabold">Integridad</h3>
+            <p class="mt-3 text-white/70">Actuamos con transparencia, ética y compromiso profesional en cada proceso.</p>
+          </article>
+          <article data-aos="zoom-in" data-aos-delay="100" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-6 shadow-panel">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/20">
+              <img src="https://api.dix.lat/media/img_1776703256298_JmdTuFfoA.jpg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
+            </div>
+            <h3 class="text-xl font-extrabold">Excelencia</h3>
+            <p class="mt-3 text-white/70">Buscamos altos estándares de calidad en resultados, procesos y atención al cliente.</p>
+          </article>
+          <article data-aos="zoom-in" data-aos-delay="200" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-6 shadow-panel">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/20">
+              <img src="https://api.dix.lat/media/img_1776703256298_JmdTuFfoA.jpg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
+            </div>
+            <h3 class="text-xl font-extrabold">Eficiencia</h3>
+            <p class="mt-3 text-white/70">Entregamos soluciones ágiles y efectivas para optimizar recursos y decisiones.</p>
+          </article>
+          <article data-aos="zoom-in" data-aos-delay="300" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-6 shadow-panel">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/20">
+              <img src="https://api.dix.lat/media/img_1776703256298_JmdTuFfoA.jpg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
+            </div>
+            <h3 class="text-xl font-extrabold">Innovación</h3>
+            <p class="mt-3 text-white/70">Adoptamos metodologías modernas para responder a un entorno empresarial dinámico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Servicios -->
+    <section id="servicios" class="border-y border-white/10 bg-white/[0.02] py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
+          <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-blue-300">Servicios</p>
+          <h2 class="text-3xl font-black sm:text-4xl">Un portafolio diseñado para resolver lo que más impacta a tu empresa</h2>
+        </div>
+        <div class="mt-14 grid gap-6 lg:grid-cols-3">
+          <article data-aos="fade-up" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-7 shadow-panel">
+            <h3 class="text-2xl font-extrabold text-blue-300">Outsourcing Contable</h3>
+            <ul class="mt-5 space-y-3 text-white/75">
+              <li>• Estados financieros</li>
+              <li>• Nómina</li>
+              <li>• Declaraciones tributarias: Renta, IVA e ICA</li>
+              <li>• Trámites ante la DIAN</li>
             </ul>
+            <p class="mt-5 text-sm font-semibold text-white">Beneficio: operación contable más ordenada y menos fricción administrativa.</p>
           </article>
-          <article class="authority-card">
-            <h3>Misión</h3>
-            <p>Ayudar a personas y empresas a cumplir con sus obligaciones contables y fiscales con claridad, orden y tranquilidad.</p>
+          <article data-aos="fade-up" data-aos-delay="100" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-7 shadow-panel">
+            <h3 class="text-2xl font-extrabold text-blue-300">Revisoría Fiscal y Auditoría</h3>
+            <ul class="mt-5 space-y-3 text-white/75">
+              <li>• Evaluación de control interno</li>
+              <li>• Auditoría financiera y tributaria</li>
+              <li>• Conversión a NIIF / IFRS</li>
+            </ul>
+            <p class="mt-5 text-sm font-semibold text-white">Beneficio: más confianza, mejor control y cumplimiento profesional.</p>
           </article>
-          <article class="authority-card">
-            <h3>Visión</h3>
-            <p>Ser una referencia de confianza en asesoría contable moderna, ágil y enfocada en resultados reales.</p>
-          </article>
-          <article class="authority-card">
-            <h3>Valores</h3>
-            <p>Ética, responsabilidad, transparencia, cercanía y compromiso con cada cliente.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="section alt-section" id="blog">
-      <div class="container">
-        <div class="section-heading reveal zoom-in">
-          <span class="eyebrow">Contenido</span>
-          <h2>Recursos que también ayudan a convertir confianza en acción</h2>
-          <p>Artículos útiles para fortalecer autoridad y acompañar el proceso de decisión del cliente.</p>
-        </div>
-        <div class="blog-grid">
-          <article class="blog-card reveal reveal-up">
-            <span class="blog-tag">Impuestos</span>
-            <h3>Qué revisar antes de presentar una declaración tributaria</h3>
-            <p>Documentos, errores comunes y decisiones clave antes de declarar.</p>
-            <a href="#contacto">Solicitar orientación</a>
-          </article>
-          <article class="blog-card reveal reveal-up">
-            <span class="blog-tag">Finanzas</span>
-            <h3>Cómo ordenar la información financiera de tu empresa</h3>
-            <p>Una base simple para entender mejor ingresos, gastos y decisiones.</p>
-            <a href="#contacto">Recibir ayuda</a>
-          </article>
-          <article class="blog-card reveal reveal-up">
-            <span class="blog-tag">Contabilidad</span>
-            <h3>Errores contables que pueden costarte tiempo y dinero</h3>
-            <p>Señales de alerta que conviene corregir cuanto antes.</p>
-            <a href="#contacto">Hablar con un asesor</a>
+          <article data-aos="fade-up" data-aos-delay="200" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-7 shadow-panel">
+            <h3 class="text-2xl font-extrabold text-blue-300">Servicios Especializados</h3>
+            <ul class="mt-5 space-y-3 text-white/75">
+              <li>• Due Diligence financiero y legal</li>
+              <li>• Contratación estatal</li>
+              <li>• Implementación de SG-SST</li>
+            </ul>
+            <p class="mt-5 text-sm font-semibold text-white">Beneficio: respaldo técnico para decisiones estratégicas y procesos críticos.</p>
           </article>
         </div>
       </div>
     </section>
-    <section class="section contact-section" id="contacto">
-      <div class="container contact-grid">
-        <div class="contact-copy reveal reveal-left">
-          <span class="eyebrow">Da el siguiente paso</span>
-          <h2>Solicita tu asesoría y recibe respuesta rápida</h2>
-          <p>
-            Si quieres dejar de improvisar con impuestos, contabilidad o nómina, este es el momento de actuar.
+    <!-- Valor agregado -->
+    <section id="valor" class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 lg:grid-cols-3">
+          <div data-aos="fade-up" class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-panel">
+            <h3 class="text-2xl font-extrabold">Planificación Estratégica</h3>
+            <p class="mt-4 text-white/75">
+              Convertimos la contabilidad en una herramienta de visión, control y crecimiento.
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100" class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-panel">
+            <h3 class="text-2xl font-extrabold">Atención Personalizada</h3>
+            <p class="mt-4 text-white/75">
+              Cada empresa recibe acompañamiento cercano, claridad y soluciones alineadas a su contexto.
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200" class="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-panel">
+            <h3 class="text-2xl font-extrabold">Eficacia</h3>
+            <p class="mt-4 text-white/75">
+              Nos enfocamos en ejecutar con precisión, rapidez y resultados medibles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA -->
+    <section class="py-10">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-[2rem] border border-blue-500/20 bg-gradient-to-r from-blue-600/20 to-white/5 px-8 py-10 shadow-glow" data-aos="zoom-in">
+          <div class="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
+            <div>
+              <h2 class="text-3xl font-black">Agenda una asesoría y empieza a ordenar tu empresa hoy</h2>
+              <p class="mt-3 max-w-2xl text-white/75">
+                Si buscas una firma moderna, seria y orientada a resultados, este es el momento de dar el siguiente paso.
+              </p>
+            </div>
+            <a
+              href="https://wa.me/573123437850?text=Hola%20OSSGIO%20SOLUTIONS%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full bg-blue-600 px-7 py-4 text-base font-extrabold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-500"
+            >
+              Agendar Asesoría Gratuita
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contacto" class="py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div data-aos="fade-right">
+          <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-blue-300">Contacto</p>
+          <h2 class="text-3xl font-black sm:text-4xl">Conversemos sobre lo que tu empresa necesita</h2>
+          <p class="mt-5 text-lg leading-8 text-white/75">
+            Puedes escribirnos para recibir orientación profesional en outsourcing contable, auditoría,
+            NIIF, Due Diligence, contratación estatal o SG-SST.
           </p>
-          <div class="contact-points">
-            <div>
-              <strong>WhatsApp directo</strong>
-              <a href="https://wa.me/573115490586?text=Hola%2C%20quiero%20asesor%C3%ADa%20contable" target="_blank" rel="noopener noreferrer">311 5490586</a>
+          <div class="mt-8 space-y-4">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p class="text-sm font-semibold text-blue-300">WhatsApp oficial</p>
+              <a
+                href="https://wa.me/573123437850?text=Hola%20OSSGIO%20SOLUTIONS%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-2 inline-block text-lg font-bold text-white"
+              >
+                +57 312 3437850
+              </a>
             </div>
-            <div>
-              <strong>Propietario</strong>
-              <p>Govany</p>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p class="text-sm font-semibold text-blue-300">Desarrollador</p>
+              <a href="mailto:guerraroncancio@gmail.com" class="mt-2 inline-block text-base font-bold text-white">
+                guerraroncancio@gmail.com
+              </a>
             </div>
-            <div>
-              <strong>Confianza</strong>
-              <p>Respuesta en menos de 24h</p>
-            </div>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a class="social-icon transition" href="https://www.instagram.com/ossgio_solutions" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a class="social-icon transition" href="https://www.facebook.com/share/1BxkJSwaeJ/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a class="social-icon transition" href="https://www.tiktok.com/@ossgio.solutions" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a class="social-icon transition" href="https://www.linkedin.com/in/ossgio-solutions" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
-        <form class="contact-form reveal reveal-right" id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required />
-            <small class="error-message"></small>
-          </div>
-          <div class="form-group">
-            <label for="email">Correo</label>
-            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
-            <small class="error-message"></small>
-          </div>
-          <div class="form-group">
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos qué necesitas resolver" required></textarea>
-            <small class="error-message"></small>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block btn-large">Empieza hoy mismo</button>
-          <p class="form-note">Respuesta en menos de 24h. Tu información será tratada con confidencialidad.</p>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-        </form>
+        <div data-aos="fade-left" class="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-panel">
+          <form id="contactForm" class="space-y-5" novalidate>
+            <div>
+              <label for="name" class="mb-2 block text-sm font-semibold text-white/85">Nombre</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Tu nombre completo"
+                class="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-4 text-white outline-none transition focus:border-blue-400"
+                required
+              />
+              <small class="error-message mt-2 block text-sm text-red-400"></small>
+            </div>
+            <div>
+              <label for="email" class="mb-2 block text-sm font-semibold text-white/85">Correo</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="tucorreo@empresa.com"
+                class="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-4 text-white outline-none transition focus:border-blue-400"
+                required
+              />
+              <small class="error-message mt-2 block text-sm text-red-400"></small>
+            </div>
+            <div>
+              <label for="message" class="mb-2 block text-sm font-semibold text-white/85">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Cuéntanos qué servicio necesitas"
+                class="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-4 text-white outline-none transition focus:border-blue-400"
+                required
+              ></textarea>
+              <small class="error-message mt-2 block text-sm text-red-400"></small>
+            </div>
+            <button
+              type="submit"
+              class="w-full rounded-full bg-blue-600 px-6 py-4 text-base font-extrabold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-500"
+            >
+              Agendar Asesoría Gratuita
+            </button>
+            <p class="text-sm text-white/60">Respuesta en menos de 24h</p>
+            <p id="formStatus" class="text-sm font-semibold"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div>
-        <strong>Govany Contabilidad</strong>
-        <p>Landing profesional orientada a conversión para servicios contables.</p>
-      </div>
-      <div>
-        <p>Govany · 312 3437850</p>
-        <p>Desarrollador: guerraroncancio@gmail.com</p>
-      </div>
-    </div>
-  </footer>
-  <a href="https://wa.me/57123437850?text=Hola%2C%20quiero%20hablar%20por%20WhatsApp%20sobre%20asesor%C3%ADa%20contable" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Hablar por WhatsApp">
+  <!-- Botón flotante WhatsApp -->
+  <a
+    href="https://wa.me/573123437850?text=Hola%20OSSGIO%20SOLUTIONS%2C%20quiero%20hablar%20por%20WhatsApp"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-5 right-5 z-50 rounded-full bg-green-500 px-6 py-4 text-sm font-extrabold text-white shadow-2xl shadow-green-500/30 transition hover:scale-105"
+    aria-label="Hablar por WhatsApp"
+  >
     WhatsApp
   </a>
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-black/60 py-12">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-3 lg:px-8">
+      <div>
+        <img
+          src="https://api.dix.lat/media/img_1776703233520_4z4_X_v2p.jpg"
+          alt="Logo OSSGIO SOLUTIONS"
+          class="h-14 w-auto rounded-xl object-contain"
+        />
+        <p class="mt-4 text-sm leading-7 text-white/65">
+          Soluciones contables modernas para empresas que quieren crecer.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-sm font-extrabold uppercase tracking-[0.2em] text-blue-300">Navegación</h3>
+        <div class="mt-4 flex flex-col gap-3 text-sm text-white/70">
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#valores">Valores</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-sm font-extrabold uppercase tracking-[0.2em] text-blue-300">Redes oficiales</h3>
+        <div class="mt-4 flex flex-col gap-3 text-sm text-white/70">
+          <a href="https://www.instagram.com/ossgio_solutions" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/share/1BxkJSwaeJ/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.tiktok.com/@ossgio.solutions" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a href="https://www.linkedin.com/in/ossgio-solutions" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto mt-10 max-w-7xl border-t border-white/10 px-4 pt-6 text-sm text-white/50 sm:px-6 lg:px-8">
+      Propietario: OSSGIO SOLUTIONS | Desarrollador: guerraroncancio@gmail.com
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true,
+      offset: 80
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
