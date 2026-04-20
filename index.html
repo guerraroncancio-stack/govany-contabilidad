@@ -21,8 +21,8 @@
   />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_CO" />
-  <meta property="og:image" content="https://api.dix.lat/media2/1776703414770.jpg" />
-  <link rel="icon" type="image/jpeg" href="https://api.dix.lat/media2/1776703426245.jpg" />
+  <meta property="og:image" content="assets/logo-principal.jpeg" />
+  <link rel="icon" type="image/jpeg" href="assets/logo-circular.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -85,17 +85,22 @@
       box-shadow: 0 20px 60px rgba(37, 99, 235, .18);
       border-color: rgba(96,165,250,.35);
     }
+    .social-icon {
+      transition: transform .25s ease, color .25s ease;
+    }
     .social-icon:hover {
       transform: translateY(-3px);
+      color: #93c5fd;
     }
   </style>
 </head>
 <body class="text-white">
+  <!-- Navbar -->
   <header class="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
       <a href="#inicio" class="flex items-center gap-3">
         <img
-          src="https://api.dix.lat/media2/1776703414770.jpg"
+          src="assets/logo-principal.jpeg"
           alt="Logo OSSGIO SOLUTIONS S.A.S."
           class="h-12 w-auto rounded-xl object-contain shadow-lg"
         />
@@ -122,13 +127,14 @@
     </div>
   </header>
   <main>
+    <!-- Hero -->
     <section id="inicio" class="relative overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-transparent"></div>
       <div class="mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div data-aos="fade-right">
           <div class="mb-6 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-blue-200">
             <img
-              src="https://api.dix.lat/media2/1776703426245.jpg"
+              src="assets/logo-circular.jpeg"
               alt="Ícono OSSGIO SOLUTIONS"
               class="h-8 w-8 rounded-full object-cover"
             />
@@ -174,7 +180,7 @@
         <div data-aos="fade-left" class="relative">
           <div class="hero-grid-bg rounded-[2rem] border border-white/10 p-6 shadow-panel">
             <img
-              src="https://api.dix.lat/media2/1776703414770.jpg"
+              src="assets/logo-principal.jpeg"
               alt="Logo principal OSSGIO SOLUTIONS S.A.S."
               class="mx-auto w-full max-w-md rounded-3xl object-contain"
             />
@@ -199,6 +205,7 @@
         </div>
       </div>
     </section>
+    <!-- Sobre Nosotros -->
     <section id="nosotros" class="border-t border-white/10 py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid gap-10 lg:grid-cols-2">
@@ -234,6 +241,7 @@
         </div>
       </div>
     </section>
+    <!-- Valores -->
     <section id="valores" class="py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
@@ -243,28 +251,28 @@
         <div class="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           <article data-aos="zoom-in" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-6 shadow-panel">
             <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/20">
-              <img src="https://api.dix.lat/media2/1776703426245.jpg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
+              <img src="assets/logo-circular.jpeg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
             </div>
             <h3 class="text-xl font-extrabold">Integridad</h3>
             <p class="mt-3 text-white/70">Actuamos con transparencia, ética y compromiso profesional en cada proceso.</p>
           </article>
           <article data-aos="zoom-in" data-aos-delay="100" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-6 shadow-panel">
             <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/20">
-              <img src="https://api.dix.lat/media2/1776703426245.jpg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
+              <img src="assets/logo-circular.jpeg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
             </div>
             <h3 class="text-xl font-extrabold">Excelencia</h3>
             <p class="mt-3 text-white/70">Buscamos altos estándares de calidad en resultados, procesos y atención al cliente.</p>
           </article>
           <article data-aos="zoom-in" data-aos-delay="200" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-6 shadow-panel">
             <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/20">
-              <img src="https://api.dix.lat/media2/1776703426245.jpg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
+              <img src="assets/logo-circular.jpeg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
             </div>
             <h3 class="text-xl font-extrabold">Eficiencia</h3>
             <p class="mt-3 text-white/70">Entregamos soluciones ágiles y efectivas para optimizar recursos y decisiones.</p>
           </article>
           <article data-aos="zoom-in" data-aos-delay="300" class="card-hover rounded-3xl border border-white/10 bg-white/5 p-6 shadow-panel">
             <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600/20">
-              <img src="https://api.dix.lat/media2/1776703426245.jpg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
+              <img src="assets/logo-circular.jpeg" alt="Logo circular OSSGIO" class="h-10 w-10 rounded-full object-cover" />
             </div>
             <h3 class="text-xl font-extrabold">Innovación</h3>
             <p class="mt-3 text-white/70">Adoptamos metodologías modernas para responder a un entorno empresarial dinámico.</p>
@@ -272,6 +280,7 @@
         </div>
       </div>
     </section>
+    <!-- Servicios -->
     <section id="servicios" class="border-y border-white/10 bg-white/[0.02] py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
@@ -310,6 +319,7 @@
         </div>
       </div>
     </section>
+    <!-- Valor agregado -->
     <section id="valor" class="py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid gap-6 lg:grid-cols-3">
@@ -334,6 +344,7 @@
         </div>
       </div>
     </section>
+    <!-- CTA -->
     <section class="py-10">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="rounded-[2rem] border border-blue-500/20 bg-gradient-to-r from-blue-600/20 to-white/5 px-8 py-10 shadow-glow" data-aos="zoom-in">
@@ -356,6 +367,7 @@
         </div>
       </div>
     </section>
+    <!-- Contacto -->
     <section id="contacto" class="py-24">
       <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div data-aos="fade-right">
@@ -442,6 +454,7 @@
       </div>
     </section>
   </main>
+  <!-- Botón flotante WhatsApp -->
   <a
     href="https://wa.me/573123437850?text=Hola%20OSSGIO%20SOLUTIONS%2C%20quiero%20hablar%20por%20WhatsApp"
     target="_blank"
@@ -451,11 +464,12 @@
   >
     WhatsApp
   </a>
+  <!-- Footer -->
   <footer class="border-t border-white/10 bg-black/60 py-12">
     <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-3 lg:px-8">
       <div>
         <img
-          src="https://api.dix.lat/media2/1776703414770.jpg"
+          src="assets/logo-principal.jpeg"
           alt="Logo OSSGIO SOLUTIONS"
           class="h-14 w-auto rounded-xl object-contain"
         />
@@ -494,7 +508,55 @@
       once: true,
       offset: 80
     });
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+    function showError(input, message) {
+      const error = input.parentElement.querySelector('.error-message');
+      error.textContent = message;
+    }
+    function clearError(input) {
+      const error = input.parentElement.querySelector('.error-message');
+      error.textContent = '';
+    }
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+    }
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const message = document.getElementById('message');
+      let valid = true;
+      if (!name.value.trim()) {
+        showError(name, 'Por favor ingresa tu nombre.');
+        valid = false;
+      } else {
+        clearError(name);
+      }
+      if (!email.value.trim()) {
+        showError(email, 'Por favor ingresa tu correo.');
+        valid = false;
+      } else if (!validateEmail(email.value.trim())) {
+        showError(email, 'Ingresa un correo válido.');
+        valid = false;
+      } else {
+        clearError(email);
+      }
+      if (!message.value.trim()) {
+        showError(message, 'Por favor escribe tu mensaje.');
+        valid = false;
+      } else {
+        clearError(message);
+      }
+      if (!valid) {
+        formStatus.textContent = 'Revisa los campos antes de enviar.';
+        formStatus.className = 'text-sm font-semibold text-red-400';
+        return;
+      }
+      formStatus.textContent = 'Mensaje enviado correctamente. Te responderemos en menos de 24h.';
+      formStatus.className = 'text-sm font-semibold text-green-400';
+      contactForm.reset();
+    });
   </script>
-  <script src="script.js"></script>
 </body>
 </html>
